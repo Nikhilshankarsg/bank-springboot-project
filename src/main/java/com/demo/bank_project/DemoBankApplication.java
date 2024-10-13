@@ -15,5 +15,6 @@ public class DemoBankApplication extends SpringBootServletInitializer {
 
     public static void main(String[] args) {
         SpringApplication.run(DemoBankApplication.class, args);
+        System.out.println("Welcome to CLoud Classes");
     }
 }
