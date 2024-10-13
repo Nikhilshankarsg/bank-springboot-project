@@ -1,14 +1,11 @@
-package com.demo.bank_project;
-
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
 @SpringBootApplication
-public class DemoBankApplication {
+public class DemoBankApplication extends SpringBootServletInitializer {
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
+        return builder.sources(DemoBankApplication.class);
+    }
 
-	public static void main(String[] args) {
-		System.out.println("Hai");
-		SpringApplication.run(DemoBankApplication.class, args);
-	}
-
+    public static void main(String[] args) {
+        SpringApplication.run(DemoBankApplication.class, args);
+    }
 }
